@@ -21,7 +21,7 @@ the work is the co-design of server/SmartNIC that maintains low latency.
 
 The OSDI'20 paper proposed a design of DFS using client-local NVM. It also provides detailed
 benchmark results that compares to other client-server model DFS, and across storage medias
-of SSD and Intel Optane PMEM. The design explores how a DFS can benefits from a tightly
+of SSD and Intel Optane PMEM. The design explores how a DFS can benefit from a tightly
 local-coupled low-latency memory. This paper is the comparison baseline of LineFS.
 
 - Ceph: A Scalable, High-Performance Distributed File System
@@ -29,8 +29,8 @@ local-coupled low-latency memory. This paper is the comparison baseline of LineF
 
 An old and renowned paper from OSDI'06, has long been commercialised by Red Hat for their
 stroage cluster, also known as BlueStore. It provides near-POSIX filesystem interface to the
-client processes, while letting the clients to opera:wqte file IO directly on the Object Storage
-Devices (OSDs). Metadata of are maintained on a separate cluster, to whom the clients and OSDs
+client processes, while letting the clients to operate file IO directly on the Object Storage
+Devices (OSDs). Metadata are maintained on a separate cluster, to whom the clients and OSDs
 connect. This work is nowadays a mature baseline for most DFS research.
 
 ## Persistent Memory
